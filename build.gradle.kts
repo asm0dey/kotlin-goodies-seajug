@@ -33,7 +33,9 @@ dependencies {
     testImplementation("io.kotest:kotest-runner-junit5:5.9.1")
     testImplementation("io.kotest:kotest-assertions-core:5.9.1")
     testImplementation("io.kotest:kotest-property:5.9.1")
-    
+    testImplementation("io.kotest:kotest-extensions-htmlreporter:5.9.1")
+    testImplementation("io.kotest:kotest-extensions-junitxml:5.9.1")
+
     // MockK dependency
     testImplementation("io.mockk:mockk:1.14.5")
     
@@ -47,6 +49,12 @@ kotlin {
     }
 }
 
-tasks.withType<Test> {
+tasks.test {
     useJUnitPlatform()
+    reports {
+        html.required.set(false)
+        junitXml.required.set(false)
+    }
+    systemProperty("gradle.build.dir", layout.buildDirectory.toString())
+
 }
