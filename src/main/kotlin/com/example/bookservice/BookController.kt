@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*
 class BookController(private val bookService: BookService) {
     
     @GetMapping
-    fun getAllBooks(): ResponseEntity<List<Book>> {
+    fun getAllBooks(): ResponseEntity<Iterable<Book?>> {
         val books = bookService.getAllBooks()
         return ResponseEntity.ok(books)
     }

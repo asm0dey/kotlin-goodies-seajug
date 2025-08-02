@@ -3,6 +3,7 @@ import io.kotest.core.extensions.Extension
 import io.kotest.core.spec.SpecExecutionOrder
 import io.kotest.extensions.htmlreporter.HtmlReporter
 import io.kotest.extensions.junitxml.JunitXmlReporter
+import io.kotest.extensions.spring.SpringExtension
 
 @Suppress("unused")
 class ProjectConfig : AbstractProjectConfig() {
@@ -15,5 +16,6 @@ class ProjectConfig : AbstractProjectConfig() {
             useTestPathAsName = true,
         ),
         HtmlReporter(),
+        SpringExtension
     )
 }

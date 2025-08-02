@@ -11,7 +11,7 @@ import io.mockk.verify
 
 class BookServiceTest : DescribeSpec({
     
-    val mockRepository = mockk<BookRepository>()
+    val mockRepository = mockk<JdbcBookRepository>()
     val bookService = BookService(mockRepository)
     
     val sampleBooks = listOf(

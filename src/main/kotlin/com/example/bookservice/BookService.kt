@@ -3,9 +3,9 @@ package com.example.bookservice
 import org.springframework.stereotype.Service
 
 @Service
-class BookService(private val bookRepository: BookRepository) {
+class BookService(private val bookRepository: JdbcBookRepository) {
     
-    fun getAllBooks(): List<Book> {
+    fun getAllBooks(): Iterable<Book?> {
         return bookRepository.findAll()
     }
     
@@ -16,7 +16,7 @@ class BookService(private val bookRepository: BookRepository) {
     fun getRecommendation(genre: String?): Book? {
         return if (genre.isNullOrBlank()) {
             // If no genre specified, return random book from all books
-            val allBooks = bookRepository.findAll()
+            val allBooks = bookRepository.findAll().toList()
             if (allBooks.isEmpty()) null else allBooks.random()
         } else {
             // Return random book from specified genre
