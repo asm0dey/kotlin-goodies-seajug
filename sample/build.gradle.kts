@@ -39,7 +39,7 @@ dependencies {
 
 
     // MockK dependency
-    testImplementation("io.mockk:mockk:1.14.5")
+    testImplementation("io.mockk:mockk:1.14.11")
     
     // Atrium dependency
     testImplementation("ch.tutteli.atrium:atrium-fluent:1.2.0")
