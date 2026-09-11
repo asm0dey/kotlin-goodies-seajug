@@ -33,7 +33,7 @@ dependencies {
     testImplementation("io.kotest:kotest-runner-junit5:5.9.1")
     testImplementation("io.kotest:kotest-assertions-core:5.9.1")
     testImplementation("io.kotest:kotest-property:5.9.1")
-    testImplementation("io.kotest:kotest-extensions-htmlreporter:5.9.1")
+    testImplementation("io.kotest:kotest-extensions-htmlreporter:6.2.5")
     testImplementation("io.kotest:kotest-extensions-junitxml:5.9.1")
     testImplementation("io.kotest.extensions:kotest-extensions-spring:1.3.0")
 
