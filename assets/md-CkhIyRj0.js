@@ -1,0 +1,9 @@
+import{_ as o}from"./slidev/CodeBlockWrapper.vue_vue_type_script_setup_true_lang-DSzLJKaG.js";import{b as p,o as f,w as e,g as s,e as m,m as u,ae as n,v as k,x as c,U as l}from"./modules/vue-D7a55lpS.js";import{I as d}from"./slidev/default-DKJjz6rP.js";import{u as h,f as _}from"./slidev/context-B_pwYHmp.js";import"./modules/unplugin-icons-764xNj1R.js";import"./index-BkUfjxgF.js";import"./modules/shiki-cvHylE4f.js";const N={__name:"slides.md__slidev_33",setup(g){const{$clicksContext:i,$frontmatter:t}=h();return i.setup(),(S,a)=>{const r=o;return f(),p(d,k(c(l(_)(l(t),32))),{default:e(()=>[a[1]||(a[1]=s("h1",null,"Error!",-1)),m(r,u({},{title:"",ranges:["all","1","2","3","4","5","6","7","8","9"]}),{default:e(()=>a[0]||(a[0]=[s("pre",{class:"shiki shiki-themes vitesse-dark vitesse-light slidev-code",style:{"--shiki-dark":"#dbd7caee","--shiki-light":"#393a34","--shiki-dark-bg":"#121212","--shiki-light-bg":"#ffffff"}},[s("code",{class:"language-txt"},[s("span",{class:"line"},[s("span",null,'Attempting to shrink arg "꽪Ԉ㴨啣នഄ騿挋③ꩶ괖✷⃮㴧砑琶㋉뇛寵嚱땒箂醉℉ꫴ짥Ẩ鼏콋鹗맼㯖Ở㑾ᜫ綦講뼞仦ꄁ黺鄙ᾓ㤫川陝泴"')]),n(`
+`),s("span",{class:"line"},[s("span",null,'Shrink #1: "꽪Ԉ㴨啣នഄ騿挋③ꩶ괖✷⃮㴧砑琶㋉뇛寵嚱땒箂醉℉" fail')]),n(`
+`),s("span",{class:"line"},[s("span",null,'Shrink #2: "꽪Ԉ㴨啣នഄ騿挋③ꩶ괖✷" fail')]),n(`
+`),s("span",{class:"line"},[s("span",null,'Shrink #3: "꽪Ԉ㴨啣នഄ" fail')]),n(`
+`),s("span",{class:"line"},[s("span",null,'Shrink #4: "꽪Ԉ㴨" fail')]),n(`
+`),s("span",{class:"line"},[s("span",null,'Shrink #5: "꽪Ԉ" fail')]),n(`
+`),s("span",{class:"line"},[s("span",null,'Shrink #6: "꽪" fail')]),n(`
+`),s("span",{class:"line"},[s("span",null,"Shrink #7: <empty string> pass")]),n(`
+`),s("span",{class:"line"},[s("span",null,'Shrink result (after 7 shrinks) => "꽪"')])])],-1)])),_:1,__:[0]},16),a[2]||(a[2]=s("p",null,"And there is more!",-1))]),_:1,__:[1,2]},16)}}};export{N as default};
